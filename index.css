@@ -1,0 +1,67 @@
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+background-color: #f4f6f8;
+color: #222;
+}
+header {
+background-color: #12355b;
+color: white;
+padding: 20px;
+text-align: center;
+}
+header h1 { margin: 0; font-size: 28px; }
+.slogan { margin: 5px 0 15px; }
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 8px;
+}
+nav a:hover { text-decoration: underline; }
+main {
+width: 90%;
+max-width: 1000px;
+margin: 25px auto;
+}
+section {
+background-color: white;
+padding: 25px;
+margin-bottom: 25px;
+border: 1px solid #ddd;
+}
+h2 { color: #12355b; }
+h3 { color: #1d5f91; }
+img { max-width: 100%; }
+.button {
+display: inline-block;
+background-color: #1d5f91;
+color: white;
+padding: 10px 16px;
+border: none;
+text-decoration: none;
+margin-top: 10px;
+}
+.button:hover { background-color: #12355b; }
+footer {
+background-color: #12355b;
+color: white;
+text-align: center;
+padding: 20px;
+margin-top: 30px;
+}
+@media screen and (max-width: 700px) {
+nav a { display: block; margin: 8px; }
+}
+.welcome { display: flex; gap: 30px; align-items: center; }
+.welcome div { width: 55%; }
+.welcome img { width: 45%; }
+.cards { display: flex; gap: 20px; }
+.card { flex: 1; background-color: #f7f7f7; padding: 15px; border: 1px solid #ccc; }
+.card img { height: 130px; width: 100%; object-fit: contain; }
+.simple-box { background-color: #e9f1f8; }
+@media screen and (max-width: 700px) {
+.welcome { display: block; }
+.welcome div, .welcome img { width: 100%; }
+.cards { display: block; }
+.card { margin-bottom: 15px; }
+}
