@@ -3,19 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Enquiry - Hlulani Digital Solutions</title>
+<title>Request a Digital Services Enquiry | Hlulani Digital Solutions</title>
+<meta name="description" content="Send Hlulani Digital Solutions an enquiry about web development, graphic design or IT support.">
+<meta name="theme-color" content="#12355b">
 <link rel="stylesheet" href="enquiry.css">
 </head>
 <body>
 <header>
 <h1>Hlulani Digital Solutions</h1>
 <p class="slogan">Your Digital Future Starts Here.</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="enquiry.html">Enquiry</a>
-<a href="contact.html">Contact</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+<nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+<a href="index.html" data-page="index.html">Home</a>
+<a href="about.html" data-page="about.html">About Us</a>
+<a href="services.html" data-page="services.html">Services</a>
+<a href="enquiry.html" data-page="enquiry.html">Enquiry</a>
+<a href="contact.html" data-page="contact.html">Contact</a>
 </nav>
 </header>
 <main>
@@ -53,5 +56,6 @@
 <p>Pretoria and Johannesburg</p>
 <p>&copy; 2026 Hlulani Digital Solutions</p>
 </footer>
+<script src="script.js" defer></script>
 </body>
 </html>

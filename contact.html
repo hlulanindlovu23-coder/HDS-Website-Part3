@@ -3,26 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact - Hlulani Digital Solutions</title>
+<title>Contact Hlulani Digital Solutions | Gauteng</title>
+<meta name="description" content="Contact Hlulani Digital Solutions in Pretoria and Johannesburg for web development, graphic design and IT support.">
+<meta name="theme-color" content="#12355b">
 <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 <header>
 <h1>Hlulani Digital Solutions</h1>
 <p class="slogan">Your Digital Future Starts Here.</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="enquiry.html">Enquiry</a>
-<a href="contact.html">Contact</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+<nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+<a href="index.html" data-page="index.html">Home</a>
+<a href="about.html" data-page="about.html">About Us</a>
+<a href="services.html" data-page="services.html">Services</a>
+<a href="enquiry.html" data-page="enquiry.html">Enquiry</a>
+<a href="contact.html" data-page="contact.html">Contact</a>
 </nav>
 </header>
 <main>
 <section>
 <h2>Contact Us</h2>
 <p>We have two service locations in Gauteng.</p>
-<img class="map" src="images/map.svg" alt="Map showing Pretoria and Johannesburg">
+<img class="map" src="images/map.svg" alt="Illustrated map representing the Pretoria and Johannesburg service areas">
 </section>
 <section class="cards">
 <div class="card">
@@ -52,5 +55,6 @@
 <p>Pretoria and Johannesburg</p>
 <p>&copy; 2026 Hlulani Digital Solutions</p>
 </footer>
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -4,18 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Home - Hlulani Digital Solutions</title>
+<meta name="description" content="Affordable web development, graphic design and IT support for individuals and small businesses in Gauteng.">
+<meta name="theme-color" content="#12355b">
 <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <header>
 <h1>Hlulani Digital Solutions</h1>
 <p class="slogan">Your Digital Future Starts Here.</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="enquiry.html">Enquiry</a>
-<a href="contact.html">Contact</a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+<nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
+<a href="index.html" data-page="index.html">Home</a>
+<a href="about.html" data-page="about.html">About Us</a>
+<a href="services.html" data-page="services.html">Services</a>
+<a href="enquiry.html" data-page="enquiry.html">Enquiry</a>
+<a href="contact.html" data-page="contact.html">Contact</a>
 </nav>
 </header>
 <main>
@@ -26,7 +29,7 @@
 <p>Our aim is to help clients build a better online presence and solve everyday technology problems.</p>
 <a class="button" href="enquiry.html">Make an Enquiry</a>
 </div>
-<img src="images/hero-tech.svg" alt="Computer and digital technology">
+<img src="images/hero-tech.svg" alt="Illustration representing computers and digital technology">
 </section>
 <section>
 <h2>What We Do</h2>
@@ -48,5 +51,6 @@
 <p>Pretoria and Johannesburg</p>
 <p>&copy; 2026 Hlulani Digital Solutions</p>
 </footer>
+<script src="script.js" defer></script>
 </body>
 </html>
