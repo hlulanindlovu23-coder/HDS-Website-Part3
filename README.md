@@ -3,39 +3,41 @@
 **Slogan:** Your Digital Future Starts Here.
 
 ## Project overview
-This website presents Hlulani Digital Solutions, a Gauteng-based digital services business offering web development, graphic design and basic IT support. It contains five pages: Home, About Us, Services, Enquiry and Contact.
+A five-page responsive website for Hlulani Digital Solutions (HDS), a proposed Gauteng digital-services business offering web development, graphic design and basic IT support.
+
+## Pages and features
+- `index.html` – homepage and service overview
+- `about.html` – business information
+- `services.html` – service descriptions, live text search, category filtering and image gallery/lightbox
+- `enquiry.html` – validated enquiry form that prepares an email
+- `contact.html` – contact form and interactive embedded maps for Menlyn Mall and Quagga Centre
 
 ## Technologies
-- HTML5 for page structure and forms
-- CSS3 for layout, styling and responsive breakpoints
-- JavaScript for the responsive navigation menu and active-page indication
+- HTML5 for semantic page structure and accessible forms
+- CSS3 for page-specific styling and responsive layouts
+- JavaScript (`script.js`) for mobile navigation, service filtering, gallery controls, URL-based service preselection and form validation/email preparation
+- Google Maps embed/search links for map viewing and directions
 
 ## Project structure
-- `index.html` – homepage
-- `about.html` – business information
-- `services.html` – service descriptions
-- `enquiry.html` – enquiry form
-- `contact.html` – contact information
-- `*.css` – page-specific stylesheets
-- `script.js` – shared navigation behaviour
-- `images/` – website illustrations and graphics
-- `robots.txt` and `sitemap.xml` – search-engine crawling guidance
+- Five HTML pages listed above
+- `index.css`, `about.css`, `services.css`, `enquiry.css`, `contact.css` – external stylesheets
+- `script.js` – shared JavaScript interactions
+- `images/` – illustrations and website mockup
+- `robots.txt`, `sitemap.xml` – basic search-engine files
+- `CHANGELOG.md` – development history
+- `REFERENCES.md` – technical references
 
-## Running the website
-Open `index.html` in a modern browser, or use the Live Server extension in Visual Studio Code. The website is currently a static front-end project. Form processing and email delivery require a configured server-side or third-party form endpoint before real submissions can be received.
+## Run locally
+Open `index.html` in a browser or use the Live Server extension in Visual Studio Code. An internet connection is required for the embedded Google Maps.
 
-## Part 3 development notes
-The first Part 3 improvement milestone focuses on responsive navigation, mobile/tablet layout adjustments, responsive images, accessibility improvements and basic on-page SEO. Further interactive features and form processing are to be implemented and tested in subsequent milestones.
+## Form behaviour and important limitation
+The enquiry and contact forms validate required fields in the browser and open the visitor's default email application with a pre-addressed, pre-filled message to **HlulaniNdlovu23@gmail.com**. The visitor must review and press Send in their email application. This is suitable for a static website demonstration, but it is not automatic server-side delivery and does not store submissions. Automatic form delivery/AJAX requires a configured backend or third-party form endpoint.
 
-## Business contact details displayed on the website
-- Pretoria: 012 345 6789
-- Johannesburg: 011 234 5678
-- General email: info@hlulanidigital.co.za
+## Proposed service locations
+- Menlyn Mall, Atterbury Road, Menlyn, Pretoria, Gauteng
+- Quagga Centre, Quagga Road, Pretoria West, Gauteng
 
-These are the contact details currently included in the supplied Part 2 website. Confirm that they are valid before publishing the site publicly.
+These are map reference/meeting points supplied for the project. They are not confirmation of registered HDS offices or a street address. Verify details before publishing.
 
-## Changelog
-See [CHANGELOG.md](CHANGELOG.md) for a record of development updates.
-
-## References
-See [REFERENCES.md](REFERENCES.md) for technical references used during development.
+## Changelog and references
+See [CHANGELOG.md](CHANGELOG.md) and [REFERENCES.md](REFERENCES.md).

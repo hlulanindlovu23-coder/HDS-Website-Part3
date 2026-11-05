@@ -1,61 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Request a Digital Services Enquiry | Hlulani Digital Solutions</title>
-<meta name="description" content="Send Hlulani Digital Solutions an enquiry about web development, graphic design or IT support.">
-<meta name="theme-color" content="#12355b">
-<link rel="stylesheet" href="enquiry.css">
-</head>
-<body>
-<header>
-<h1>Hlulani Digital Solutions</h1>
-<p class="slogan">Your Digital Future Starts Here.</p>
-<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
-<nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
-<a href="index.html" data-page="index.html">Home</a>
-<a href="about.html" data-page="about.html">About Us</a>
-<a href="services.html" data-page="services.html">Services</a>
-<a href="enquiry.html" data-page="enquiry.html">Enquiry</a>
-<a href="contact.html" data-page="contact.html">Contact</a>
-</nav>
-</header>
-<main>
-<section>
-<h2>Enquiry</h2>
-<p>Complete the form below and tell us what you need.</p>
-<form action="#" method="post">
-<label for="name">Full Name:</label>
-<input type="text" id="name" name="name" required>
-<label for="email">Email Address:</label>
-<input type="email" id="email" name="email" required>
-<label for="phone">Phone Number:</label>
-<input type="tel" id="phone" name="phone">
-<label for="service">Service:</label>
-<select id="service" name="service">
-<option>Web Development</option>
-<option>Graphic Design</option>
-<option>IT Support</option>
-</select>
-<label for="message">Tell us what you need:</label>
-<textarea id="message" name="message" rows="7"></textarea>
-<input type="submit" value="Submit Enquiry" class="button">
-</form>
-</section>
-<section class="simple-box">
-<h2>Contact Details</h2>
-<p>Phone: 012 345 6789</p>
-<p>Email: info@hlulanidigital.co.za</p>
-<p>Monday-Friday: 08:00-17:00</p>
-</section>
-</main>
-<footer>
-<p><strong>Hlulani Digital Solutions</strong></p>
-<p>Phone: 012 345 6789 | Email: info@hlulanidigital.co.za</p>
-<p>Pretoria and Johannesburg</p>
-<p>&copy; 2026 Hlulani Digital Solutions</p>
-</footer>
-<script src="script.js" defer></script>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Request a Digital Services Enquiry | Hlulani Digital Solutions</title><meta name="description" content="Request a quotation for web development, graphic design or IT support from Hlulani Digital Solutions."><link rel="stylesheet" href="enquiry.css"></head>
+<body><header><h1>Hlulani Digital Solutions</h1><p class="slogan">Your Digital Future Starts Here.</p><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button><nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation"><a href="index.html" data-page="index.html">Home</a><a href="about.html" data-page="about.html">About Us</a><a href="services.html" data-page="services.html">Services</a><a href="enquiry.html" data-page="enquiry.html">Enquiry</a><a href="contact.html" data-page="contact.html">Contact</a></nav></header>
+<main><section><h2>Request an Enquiry or Quote</h2><p>Tell us what you need and we will prepare an email for you to send.</p>
+<form class="js-mail-form" data-form-type="enquiry">
+<label for="enquiry-name">Full name</label><input id="enquiry-name" name="name" type="text" autocomplete="name" required minlength="2">
+<label for="enquiry-email">Email address</label><input id="enquiry-email" name="email" type="email" autocomplete="email" required>
+<label for="enquiry-phone">Phone number (optional)</label><input id="enquiry-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9+()\s-]{7,20}" title="Enter a valid phone number">
+<label for="service">Service required</label><select id="service" name="service" required><option value="">Choose a service</option><option>Web Development</option><option>Graphic Design</option><option>IT Support</option><option>More than one service</option></select>
+<label for="enquiry-type">Enquiry type</label><select id="enquiry-type" name="enquiryType" required><option value="">Choose an option</option><option>Request a quotation</option><option>Ask a question</option><option>Request support</option></select>
+<label for="enquiry-message">Describe what you need</label><textarea id="enquiry-message" name="message" rows="7" required minlength="10"></textarea>
+<button class="button" type="submit">Prepare Enquiry Email</button><p class="form-feedback" role="status" aria-live="polite"></p></form></section>
+<section class="simple-box"><h2>Contact Details</h2><p>Email: <a href="mailto:HlulaniNdlovu23@gmail.com">HlulaniNdlovu23@gmail.com</a></p><p>Meeting points: Menlyn Mall and Quagga Centre, Gauteng</p><p>Monday-Friday: 08:00-17:00</p></section></main>
+<footer><p><strong>Hlulani Digital Solutions</strong></p><p>Email: HlulaniNdlovu23@gmail.com</p><p>Menlyn Mall and Quagga Centre, Gauteng</p><p>&copy; 2026 Hlulani Digital Solutions</p></footer><script src="script.js" defer></script></body></html>

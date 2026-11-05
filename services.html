@@ -4,47 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Digital Services | Hlulani Digital Solutions</title>
-<meta name="description" content="Explore web development, graphic design and IT support services from Hlulani Digital Solutions in Gauteng.">
-<meta name="theme-color" content="#12355b">
+<meta name="description" content="Search web development, graphic design and IT support services from Hlulani Digital Solutions in Gauteng.">
 <link rel="stylesheet" href="services.css">
 </head>
 <body>
 <header>
-<h1>Hlulani Digital Solutions</h1>
-<p class="slogan">Your Digital Future Starts Here.</p>
+<h1>Hlulani Digital Solutions</h1><p class="slogan">Your Digital Future Starts Here.</p>
 <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
 <nav id="primary-navigation" class="primary-navigation" aria-label="Main navigation">
-<a href="index.html" data-page="index.html">Home</a>
-<a href="about.html" data-page="about.html">About Us</a>
-<a href="services.html" data-page="services.html">Services</a>
-<a href="enquiry.html" data-page="enquiry.html">Enquiry</a>
-<a href="contact.html" data-page="contact.html">Contact</a>
-</nav>
-</header>
+<a href="index.html" data-page="index.html">Home</a><a href="about.html" data-page="about.html">About Us</a><a href="services.html" data-page="services.html">Services</a><a href="enquiry.html" data-page="enquiry.html">Enquiry</a><a href="contact.html" data-page="contact.html">Contact</a>
+</nav></header>
 <main>
 <section>
-<h2>Our Services</h2>
-<p>We offer three main services.</p>
+<h2>Our Services</h2><p>Search for a service or choose a category to narrow the results.</p>
+<div class="service-tools">
+<label for="service-search">Search services</label><input id="service-search" type="search" placeholder="Try website, logo or computer support">
+<label for="service-filter">Filter by category</label>
+<select id="service-filter"><option value="all">All services</option><option value="web">Web development</option><option value="design">Graphic design</option><option value="support">IT support</option></select>
+<p id="service-count" class="status-message" aria-live="polite">Showing all 3 services.</p>
+</div>
 </section>
-<section class="service">
-<img src="images/web-development.svg" alt="Web development">
-<div><h2>1. Web Development</h2><p>We build simple websites for businesses, portfolios and personal projects.</p><ul><li>Business websites</li><li>Personal websites</li><li>Website updates</li><li>Basic HTML and CSS layouts</li></ul></div>
-</section>
-<section class="service">
-<img src="images/graphic-design.svg" alt="Graphic design">
-<div><h2>2. Graphic Design</h2><p>We create simple designs that help businesses present themselves professionally.</p><ul><li>Logos</li><li>Flyers</li><li>Posters</li><li>Social media graphics</li></ul></div>
-</section>
-<section class="service">
-<img src="images/it-support.svg" alt="IT support">
-<div><h2>3. IT Support</h2><p>We assist with common computer and technology problems.</p><ul><li>Computer setup</li><li>Software installation</li><li>Basic network troubleshooting</li><li>General technical support</li></ul></div>
-</section>
+<div id="service-list">
+<section class="service service-item" data-category="web" data-search="web development business website personal portfolio website updates html css">
+<img src="images/web-development.svg" alt="Illustration of web development">
+<div><h2>Web Development</h2><p>We build simple websites for businesses, portfolios and personal projects.</p><ul><li>Business websites</li><li>Personal websites and portfolios</li><li>Website updates</li><li>Basic HTML and CSS layouts</li></ul><a class="button" href="enquiry.html?service=Web%20Development">Enquire about web development</a></div></section>
+<section class="service service-item" data-category="design" data-search="graphic design logo flyer poster social media graphics branding">
+<img src="images/graphic-design.svg" alt="Illustration of graphic design">
+<div><h2>Graphic Design</h2><p>We create simple designs that help businesses present themselves professionally.</p><ul><li>Logos</li><li>Flyers and posters</li><li>Social media graphics</li><li>Basic brand visuals</li></ul><a class="button" href="enquiry.html?service=Graphic%20Design">Enquire about graphic design</a></div></section>
+<section class="service service-item" data-category="support" data-search="it support computer setup software installation network troubleshooting technical support">
+<img src="images/it-support.svg" alt="Illustration of IT support">
+<div><h2>IT Support</h2><p>We assist with common computer and technology problems.</p><ul><li>Computer setup</li><li>Software installation</li><li>Basic network troubleshooting</li><li>General technical support</li></ul><a class="button" href="enquiry.html?service=IT%20Support">Enquire about IT support</a></div></section>
+</div>
+<section><h2>Our Work Gallery</h2><p>Select an image to view it larger. Use the arrow buttons to browse.</p>
+<div class="gallery-grid" id="work-gallery">
+<button class="gallery-item" type="button" data-full="images/website-mockup.png" aria-label="View website mockup"><img src="images/website-mockup.png" alt="Website design mockup"></button>
+<button class="gallery-item" type="button" data-full="images/web-development.svg" aria-label="View web development illustration"><img src="images/web-development.svg" alt="Web development illustration"></button>
+<button class="gallery-item" type="button" data-full="images/graphic-design.svg" aria-label="View graphic design illustration"><img src="images/graphic-design.svg" alt="Graphic design illustration"></button>
+<button class="gallery-item" type="button" data-full="images/it-support.svg" aria-label="View IT support illustration"><img src="images/it-support.svg" alt="IT support illustration"></button>
+</div></section>
+<div class="lightbox" id="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+<button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+<button class="lightbox-prev" type="button" aria-label="Previous image">‹</button>
+<img id="lightbox-image" src="" alt="">
+<button class="lightbox-next" type="button" aria-label="Next image">›</button>
+<p id="lightbox-caption" aria-live="polite"></p>
+</div>
 </main>
-<footer>
-<p><strong>Hlulani Digital Solutions</strong></p>
-<p>Phone: 012 345 6789 | Email: info@hlulanidigital.co.za</p>
-<p>Pretoria and Johannesburg</p>
-<p>&copy; 2026 Hlulani Digital Solutions</p>
-</footer>
-<script src="script.js" defer></script>
-</body>
-</html>
+<footer><p><strong>Hlulani Digital Solutions</strong></p><p>Phone: 012 345 6789 | Email: HlulaniNdlovu23@gmail.com</p><p>Menlyn Mall and Quagga Centre, Gauteng</p><p>&copy; 2026 Hlulani Digital Solutions</p></footer>
+<script src="script.js" defer></script></body></html>
